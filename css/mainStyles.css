@@ -59,10 +59,11 @@ form input[type="submit"]:hover{
 }
 a{
     text-decoration: none;
+    margin: 1vw;
 }
 .movieContainer{
     padding-top: 10px;
-    margin: 1vw;
+    
     width: 300px;
     height: 50vh;
     background-color: #000b;
