@@ -45,7 +45,7 @@ function showResponse(movies, containerMovies){
 		let year = document.createElement("P");
 		let type = document.createElement("P");
 
-		link.setAttribute("href","infoMovie.html?imdbID="+i["imdbID"]);
+		link.setAttribute("href","movieInfo.html?imdbID="+i["imdbID"]);
 		containerMovie.setAttribute("class","movieContainer");
 		movieImg.setAttribute("src",i["Poster"]);
 		movieInfo.setAttribute("class","movie-info");
