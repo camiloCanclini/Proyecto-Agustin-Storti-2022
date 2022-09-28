@@ -42,7 +42,7 @@ body {
 }
 
 .contain__img {
-    background: url(/Proyecto-Agustin-Storti-2022-main/images/spiderman-poster.jpg);
+    background: url(/images/spiderman-poster.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 50%;
@@ -62,7 +62,7 @@ body {
     flex-direction: column;
     gap: 10px;
     color: #fff;
-    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%), url(/Proyecto-Agustin-Storti-2022-main/images/spider-man-banner.jpg) no-repeat;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%), url(/images/spider-man-banner.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 20px 20px;
