@@ -6,95 +6,92 @@ body{
     background-attachment: fixed;
     padding: 0;
     margin: 0;
-}
-header{
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    background-color: #111;
-    padding: 10px;
-    margin: 0;
-    box-shadow: 0px 0px 20px 5px #000;
-}
-#logoPage{
-    height: 100%;
-    box-shadow: -2px 2px 0px 3px #000000;
-}
-#form-search-movie{
-    display: flex;
-    align-items: center;
-    flex-grow: 1; 
-    height: 50%;
-    margin: 0px 10px;
-}
-#form-search-movie form{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
     
 }
-#form-search-movie form input[type="search"]{
+form{
+    width: 60vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px 2px #0005;
+}
+form input[type="text"]{
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    padding: 0 2vw;
+    border: 0;
+    font-size: 5vh;
+}
+form input[type="submit"]{
     flex-grow: 1;
+    font-size: 5vh;
+    border-radius: 0;
     border-style: none;
-    height: 100%;
-    border-radius: 20px 0px 0px 20px;
+    background-color: #ffa704;
 }
-#form-search-movie form input[type="submit"]{
-    height: 100%;
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 0px 20px;
-    box-sizing: border-box;
-    font-size: 25px;
-    border-style: none;
-    border-radius: 0px 20px 20px 0px;
-    background-color:#f5ba46;
+form input[type="submit"]:hover{
+    background-color:#ffaf1c;
 }
-#account-header{
+.form-mid{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    color: #fff;
-}
-#account-header a{
-    clip-path: circle(40% at 50% 50%); /* refer remarks before usage */
-    text-align: center;
-    background-color: rgb(245, 197, 108);
-    padding: 10px;
-    margin: 0px 10px;
-}
-#account-header a i{
-    font-size: 40px;
-    color: #000;
-}
-main{
-    margin: 10px;
-}
-#cartelera{
-    padding: 10px;
-    background-color: rgb(23, 23, 23);
-    box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.8);
-    color: #fff;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-#cartelera h1{
-    font-size: 30px;
-    margin: 5px 10px;
-}
-#cartelera p{
-    margin: 5px 10px;
-}
-#cartelera_peliculas{
-    display: flex;
-    justify-content: space-evenly;
-}
-.peliculas-cartelera{
-    font-size: 10px;
-}
-aside{
-    height: 200px;
+    height: 100vh;
     
+}
+.form-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    transition: all;
+    transition-duration: 0.5s;
+}
+#containerMovies{
+    background-color: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    margin: 1vw;
+}
+.movieContainer{
+    padding-top: 10px;
+    
+    width: 300px;
+    height: 50vh;
+    background-color: #000b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.movieContainer img{
+    object-fit: cover;
+    width: 95%;
+    height: 50%;
+}
+.movie-info{
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.movieContainer p{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding: 0px 20px;
+    text-align: center;
 }
